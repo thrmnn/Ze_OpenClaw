@@ -48,6 +48,36 @@ cd ~/clawd && git add -A && git commit -m "Auto: $(date +%Y-%m-%d)" && git push 
 
 ## Notes
 
+### WSL Considerations
+Since you're running on WSL (Windows Subsystem for Linux), cron may not start automatically on boot.
+
+**Start cron service manually:**
+```bash
+sudo service cron start
+# or
+sudo /etc/init.d/cron start
+```
+
+**Check if cron is running:**
+```bash
+ps aux | grep cron
+```
+
+**Auto-start cron on WSL login (optional):**
+Add to `~/.bashrc` or `~/.profile`:
+```bash
+# Auto-start cron if not running
+if ! pgrep -x "cron" > /dev/null; then
+    sudo service cron start 2>/dev/null
+fi
+```
+
+**Alternative: Windows Task Scheduler**
+For more reliable scheduling on WSL, consider using Windows Task Scheduler to run:
+```
+wsl bash -c "cd ~/clawd && git add -A && git commit -m 'Auto: $(date +%Y-%m-%d)' && git push >> ~/clawd/logs/auto-commit.log 2>&1"
+```
+
 ### Commit Behavior
 - If no changes exist, `git commit` will fail gracefully (exit code 1) with message "nothing to commit"
 - This is expected behavior and won't break the cron job
