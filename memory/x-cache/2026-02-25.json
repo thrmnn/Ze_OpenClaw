@@ -1,0 +1,74 @@
+{
+  "date": "2026-02-25",
+  "voices": {
+    "karpathy": [
+      {
+        "text": "With the coming tsunami of demand for tokens, there are significant opportunities to orchestrate the underlying memory+compute *just right* for LLMs.\n\nThe fundamental and non-obvious constraint is that due to the chip fabrication process, you get two completely distinct pools of memory (of different physical implementations too): 1) on-chip SRAM that is immediately next to the compute units that is incredibly fast but of very of low capacity, and 2) off-chip DRAM which has extremely high capacity, but the contents of which you can only suck through a long straw. On top of this, there are many details of the architecture (e.g. systolic arrays), numerics, etc.\n\nThe design of the optimal physical substrate and then the orchestration of memory+compute across the top volume workflows of LLMs (inference prefill/decode, training/finetuning, etc.) with the best throughput/latency/$ is probably today's most interesting intellectual puzzle with the highest rewards (\\cite 4.6T of NVDA). All of it to get many tokens, fast and cheap. Arguably, the workflow that may matter the most (inference decode *and* over long token contexts in tight agentic loops) is the one hardest to achieve simultaneously by the ~both camps of what exists today (HBM-first NVIDIA adjacent and SRAM-first Cerebras adjacent). Anyway the MatX team is A++ grade so it's my pleasure to have a small involvement and congratulations on the raise!",
+        "url": "https://nitter.net/karpathy/status/2026452488434651264#m",
+        "date": "2026-02-25T00:21:37"
+      },
+      {
+        "text": "CLIs are super exciting precisely because they are a \"legacy\" technology, which means AI agents can natively and easily use them, combine them, interact with them via the entire terminal toolkit.\n\nE.g ask your Claude/Codex agent to install this new Polymarket CLI and ask for any arbitrary dashboards or interfaces or logic. The agents will build it for you. Install the Github CLI too and you can ask them to navigate the repo, see issues, PRs, discussions, even the code itself.\n\nExample: Claude built this terminal dashboard in ~3 minutes, of the highest volume polymarkets and the 24hr change. Or you can make it a web app or whatever you want. Even more powerful when you use it as a module of bigger pipelines.\n\nIf you have any kind of product or service think: can agents access and use them?\n\n- are your legacy docs (for humans) at least exportable in markdown?\n- have you written Skills for your product?\n- can your product/service be usable via CLI? Or MCP?\n- ...\n\nIt's 2026. Build. For. Agents.",
+        "url": "https://nitter.net/karpathy/status/2026360908398862478#m",
+        "date": "2026-02-24T18:17:43"
+      }
+    ],
+    "nvidiarobotics": [
+      {
+        "text": "Edge deployment meets vision AI. \ud83e\udd1d\n\nJoin us at #NVIDIAGTC to explore customizing large-scale VLMs on constrained hardware\u2014and how to balance accuracy, latency, and resource usage for mission-critical vision AI at the edge.\n\n\ud83d\udcc5 Tuesday, March 17 | 9:00 a.m\n\nAdd to schedule \u27a1\ufe0f https://nvda.ws/3OA66ZV",
+        "url": "https://nitter.net/NVIDIARobotics/status/2026410312799297894#m",
+        "date": "2026-02-24T21:34:02"
+      },
+      {
+        "text": "R to @NVIDIARobotics: Join us at Physical AI Days at #NVIDIAGTC 2026 in San Jose to learn how industrial AI, robotics, automotive, and digital twins are transforming physical AI \ud83d\udc47 https://nvda.ws/4aIlnAn",
+        "url": "https://nitter.net/NVIDIARobotics/status/2026341355044118632#m",
+        "date": "2026-02-24T17:00:01"
+      },
+      {
+        "text": "If you could give a humanoid robot one superpower\u2026\n\n\ud83e\udd14 Which would it be?",
+        "url": "https://nitter.net/NVIDIARobotics/status/2026341352254971931#m",
+        "date": "2026-02-24T17:00:00"
+      }
+    ],
+    "asimovinc": [
+      {
+        "text": "We gave Asimov hearing. \n\nTiming could've been better though.The neighbors are screaming karaoke. \n\nWelcome to the real world, Asimov.",
+        "url": "https://nitter.net/asimovinc/status/2026627075508248681#m",
+        "date": "2026-02-25T11:55:22"
+      },
+      {
+        "text": "Day 156 of building Asimov, an open-source humanoid. We're assembling the full body and testing new walking policies on the legs. Full body finishes soon, then we test everything together.",
+        "url": "https://nitter.net/asimovinc/status/2026587166525321660#m",
+        "date": "2026-02-25T09:16:47"
+      },
+      {
+        "text": "This is Asimov v1 today. Full body assembly is almost complete. A few more weeks of work and we'll test the whole system together to make this guy walk! Exciting to see it taking shape.",
+        "url": "https://nitter.net/asimovinc/status/2026573911899680771#m",
+        "date": "2026-02-25T08:24:07"
+      },
+      {
+        "text": "This frame is special to us.\n\nWe've been building Asimov for months to put an AI agent into a humanoid body.\n\nThe robot needs to see, hear, and understand its environment for that agent to have identity. It needs to know where sounds come from and turn to face them. We've been building these capabilities quietly.\n\nThis is the first frame from Asimov's eyes, the first glimpse of how the agent will see the world! That's why this matters so much to us.\n\nIt's time to make it better \ud83e\udde1",
+        "url": "https://nitter.net/asimovinc/status/2026492369139544439#m",
+        "date": "2026-02-25T03:00:05"
+      }
+    ],
+    "lerobothf": [
+      {
+        "text": "R to @LeRobotHF: Try it \ud83d\udc49 https://huggingface.co/spaces/lerobot/visualize_dataset\n\nCleaner data. Better training. Faster iteration \ud83d\udd25",
+        "url": "https://nitter.net/LeRobotHF/status/2026317207702028777#m",
+        "date": "2026-02-24T15:24:04"
+      },
+      {
+        "text": "R to @LeRobotHF: What\u2019s new ?\n\n\u2022 At-a-glance dataset overview and statistics\n\u2022 Episode filtering tools based on jerkiness and motion stalls\n\u2022 Action quality insights including autocorrelation, temporal alignment, and variance heat-maps\n\u2022 Interactive 3D URDF viewer (SO-100, SO-101, OpenArm)",
+        "url": "https://nitter.net/LeRobotHF/status/2026317205890077124#m",
+        "date": "2026-02-24T15:24:03"
+      },
+      {
+        "text": "R to @LeRobotHF: @LeRobotHF Dataset Visualizer just got a serious glow-up \u2728\n\nPeek into your robot data like never before.",
+        "url": "https://nitter.net/LeRobotHF/status/2026317203520504216#m",
+        "date": "2026-02-24T15:24:03"
+      }
+    ]
+  },
+  "summary": "\u2022 @karpathy: With the coming tsunami of demand for tokens, there are significant opportunities to orchestrate the...\n\u2022 @nvidiarobotics: Edge deployment meets vision AI. \ud83e\udd1d\n\nJoin us at #NVIDIAGTC to explore customizing large-scale VLMs on...\n\u2022 @asimovinc: We gave Asimov hearing. \n\nTiming could've been better though.The neighbors are screaming karaoke. \n\n...\n\u2022 @lerobothf: R to @LeRobotHF: Try it \ud83d\udc49 https://huggingface.co/spaces/lerobot/visualize_dataset\n\nCleaner data. Bet..."
+}

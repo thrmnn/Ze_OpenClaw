@@ -1,0 +1,34 @@
+# Virtual environments
+venv*/
+envs/
+Miniforge3*/
+
+# Credentials
+credentials/*
+!credentials/.gitkeep
+
+# Temp files
+temp-*.pdf
+*.log
+*.tar.gz
+
+# Build artifacts
+canvas/
+data/
+logs/
+
+# Project subdirectories (separate repos)
+job-pipeline/
+mission-control/
+usage-monitor/
+ml-job-tailor/
+projects/
+skills/
+
+# OpenClaw/Clawhub internal
+.openclaw/
+.clawhub/
+.clawdhub/
+
+# Scripts that shouldn't be tracked
+test-*.sh

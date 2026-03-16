@@ -1,0 +1,70 @@
+{
+  "date": "2026-03-04",
+  "voices": {
+    "nvidiarobotics": [
+      {
+        "text": "Robots that only work in isolated cells won\u2019t cut it for the next generation of smart factories. \ud83e\uddbe\n\nAt #NVIDIAGTC, hear from leading robotics innovators from @IDEALworksGmbH, @Universal_Robot, Vention, KUKA, and @theworldlabs are breaking out of these silos by integrating NVIDIA libraries, tools, and open frameworks to scale across real-world production environments.\n\nAdd to schedule \ud83d\udd17 https://nvda.ws/4stoKBz\n\ud83d\udcc5 Weds, March 18 | 11:00 AM PT",
+        "url": "https://nitter.net/NVIDIARobotics/status/2029017584750702801#m",
+        "date": "2026-03-04T02:14:24"
+      },
+      {
+        "text": "How do you bring real-time AI to robots and smart devices?\n\nJoin Chen Su at #NVIDIAGTC to discover how NVIDIA\u2019s edge AI platform enables machines to perceive, reason, and act in real time without relying on the cloud, shaping the future of smart edge and autonomous robotics.\n\n\ud83d\udcc5 Monday, March 16 | 4:00 p.m. PT.\n\nAdd to schedule \ud83d\udc49 https://nvda.ws/4b4cVL1",
+        "url": "https://nitter.net/NVIDIARobotics/status/2028941824224612675#m",
+        "date": "2026-03-03T21:13:21"
+      }
+    ],
+    "asimovinc": [
+      {
+        "text": "You can build your own humanoid at home. Asimov \u2013 Here be Dragons is now available for presale. $499 deposit, $15,000 target price. https://asimov.inc/diy-kit",
+        "url": "https://nitter.net/asimovinc/status/2029141385069379825#m",
+        "date": "2026-03-04T10:26:20"
+      },
+      {
+        "text": "RT by @asimovinc: For more context, look no further \ud83d\udc47\nhttps://www.humanoidsdaily.com/news/asimov-launches-15-000-here-be-dragons-diy-humanoid-kit?utm_source=x&utm_medium=social&utm_campaign=author_promotion&utm_content=manual_post",
+        "url": "https://nitter.net/humanoidsdaily/status/2028775988117545362#m",
+        "date": "2026-03-03T10:14:23"
+      },
+      {
+        "text": "RT by @asimovinc: Pre order is in for @asimovinc",
+        "url": "https://nitter.net/androolloyd/status/2028815302926975288#m",
+        "date": "2026-03-03T12:50:36"
+      },
+      {
+        "text": "RT by @asimovinc: \ud83d\udc09 Here Be Dragons!\n\nAsimov just launched the v1 \u201cHere Be Dragons\u201d DIY Humanoid Kit \u2014 $15,000 (near actual BOM cost).\n\nBuild your own open-source 1.20 m tall, 35 kg, 27+ DoF humanoid: \n\u2022 Modular snap-together design \n\u2022 3D-printable parts + off-the-shelf components \n\u2022 Advanced RSU ankles, passive toes & zero-shot sim-to-real RL\n\nComes unassembled with full manual + build videos. \n\nPerfect for engineers, researchers & tinkerers who want to iterate fast.",
+        "url": "https://nitter.net/XCorpHub/status/2028818788318343272#m",
+        "date": "2026-03-03T13:04:27"
+      },
+      {
+        "text": "RT by @asimovinc: Another humanoid, but a different approach.\n\n@asimovinc started in late September 2025, has been built fully in public, and is being open sourced.\n\nCreated by @menloresearch, it diverges from the usual hardware playbook.",
+        "url": "https://nitter.net/AGonchain/status/2028832608998613248#m",
+        "date": "2026-03-03T13:59:22"
+      },
+      {
+        "text": "RT by @asimovinc: Everyone can build their own humanoid robot.\n\nAfter K-Sclae shut down, another open-source humanoid robot company, Asimov, released its robot DIY kit, allowing developers to assemble their own humanoid robots (1.2m, 35kg).\n\nThe kit includes: structural frame, actuators, motors, sensors, wiring harnesses, etc. It's like assembling a computer, though humanoid robots are much more difficult.\n\nI checked the website; the price is $15,000, but shipping takes several months.\n\nIt's unclear whether people are willing to wait, or will ultimately opt for readily available humanoid robots (like the Unitree G1 and Booster K1 from China).\n\nHopefully, they will succeed.",
+        "url": "https://nitter.net/CyberRobooo/status/2028863751454433688#m",
+        "date": "2026-03-03T16:03:07"
+      },
+      {
+        "text": "RT by @asimovinc: Nuuuuuts - get your robot today",
+        "url": "https://nitter.net/papi_sour/status/2028805200463413301#m",
+        "date": "2026-03-03T12:10:27"
+      },
+      {
+        "text": "RT by @asimovinc: This is amazing guys",
+        "url": "https://nitter.net/AIFlow_ML/status/2028775067182567551#m",
+        "date": "2026-03-03T10:10:43"
+      },
+      {
+        "text": "RT by @asimovinc: The Reachy Mini just got a big brother! \ud83e\udd16\n\nOpen source humanoid DIY kit by @menloresearch \ud83e\udd2f",
+        "url": "https://nitter.net/thorwebdev/status/2028869489404612637#m",
+        "date": "2026-03-03T16:25:55"
+      },
+      {
+        "text": "RT by @asimovinc: Build your own robot.",
+        "url": "https://nitter.net/DeFi369/status/2028920367742423508#m",
+        "date": "2026-03-03T19:48:05"
+      }
+    ]
+  },
+  "summary": "\u2022 @nvidiarobotics: Robots that only work in isolated cells won\u2019t cut it for the next generation of smart factories. \ud83e\uddbe\n\n...\n\u2022 @asimovinc: You can build your own humanoid at home. Asimov \u2013 Here be Dragons is now available for presale. $499..."
+}

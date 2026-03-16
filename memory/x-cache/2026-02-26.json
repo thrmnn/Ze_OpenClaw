@@ -1,0 +1,40 @@
+{
+  "date": "2026-02-26",
+  "voices": {
+    "karpathy": [
+      {
+        "text": "It is hard to communicate how much programming has changed due to AI in the last 2 months: not gradually and over time in the \"progress as usual\" way, but specifically this last December. There are a number of asterisks but imo coding agents basically didn\u2019t work before December and basically work since - the models have significantly higher quality, long-term coherence and tenacity and they can power through large and long tasks, well past enough that it is extremely disruptive to the default programming workflow.\n\nJust to give an example, over the weekend I was building a local video analysis dashboard for the cameras of my home so I wrote: \u201cHere is the local IP and username/password of my DGX Spark. Log in, set up ssh keys, set up vLLM, download and bench Qwen3-VL, set up a server endpoint to inference videos, a basic web ui dashboard, test everything, set it up with systemd, record memory notes for yourself and write up a markdown report for me\u201d. The agent went off for ~30 minutes, ran into multiple issues, researched solutions online, resolved them one by one, wrote the code, tested it, debugged it, set up the services, and came back with the report and it was just done. I didn\u2019t touch anything. All of this could easily have been a weekend project just 3 months ago but today it\u2019s something you kick off and forget about for 30 minutes.\n\nAs a result, programming is becoming unrecognizable. You\u2019re not typing computer code into an editor like the way things were since computers were invented, that era is over. You're spinning up AI agents, giving them tasks *in English* and managing and reviewing their work in parallel. The biggest prize is in figuring out how you can keep ascending the layers of abstraction to set up long-running orchestrator Claws with all of the right tools, memory and instructions that productively manage multiple parallel Code instances for you. The leverage achievable via top tier \"agentic engineering\" feels very high right now.\n\nIt\u2019s not perfect, it needs high-level direction, judgement, taste, oversight, iteration and hints and ideas. It works a lot better in some scenarios than others (e.g. especially for tasks that are well-specified and where you can verify/test functionality). The key is to build intuition to decompose the task just right to hand off the parts that work and help out around the edges. But imo, this is nowhere near \"business as usual\" time in software.",
+        "url": "https://nitter.net/karpathy/status/2026731645169185220#m",
+        "date": "2026-02-25T18:50:53"
+      }
+    ],
+    "asimovinc": [
+      {
+        "text": "The camera and speakers are mounted above the legs for now, so the legs can now see and hear.",
+        "url": "https://nitter.net/asimovinc/status/2026916625082187981#m",
+        "date": "2026-02-26T07:05:56"
+      },
+      {
+        "text": "RT by @asimovinc: Hearing is something we do not see much of on robots",
+        "url": "https://nitter.net/chris_j_paxton/status/2026754594668220903#m",
+        "date": "2026-02-25T20:22:05"
+      },
+      {
+        "text": "We gave Asimov hearing. \n\nTiming could've been better though.The neighbors are screaming karaoke. \n\nWelcome to the real world, Asimov.",
+        "url": "https://nitter.net/asimovinc/status/2026627075508248681#m",
+        "date": "2026-02-25T11:55:22"
+      },
+      {
+        "text": "Day 156 of building Asimov, an open-source humanoid. We're assembling the full body and testing new walking policies on the legs. Full body finishes soon, then we test everything together.",
+        "url": "https://nitter.net/asimovinc/status/2026587166525321660#m",
+        "date": "2026-02-25T09:16:47"
+      },
+      {
+        "text": "This is Asimov v1 today. Full body assembly is almost complete. A few more weeks of work and we'll test the whole system together to make this guy walk! Exciting to see it taking shape.",
+        "url": "https://nitter.net/asimovinc/status/2026573911899680771#m",
+        "date": "2026-02-25T08:24:07"
+      }
+    ]
+  },
+  "summary": "\u2022 @karpathy: It is hard to communicate how much programming has changed due to AI in the last 2 months: not gradu...\n\u2022 @asimovinc: The camera and speakers are mounted above the legs for now, so the legs can now see and hear...."
+}
