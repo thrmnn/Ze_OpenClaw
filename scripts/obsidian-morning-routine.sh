@@ -1,8 +1,8 @@
 #!/bin/bash
-# Morning routine: Create/update today's daily note
-# Auto-pulls: Calendar events + Trello NOW tasks
+# Morning routine: Create/update today's daily note in Personal vault
+# Auto-pulls: Trello NOW tasks
 
-VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault"
+VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Perso_Vault"
 TODAY=$(date +%Y-%m-%d)
 DAY_NAME=$(date +%A)
 DAILY_NOTE="$VAULT_PATH/Daily/$TODAY.md"
@@ -19,36 +19,31 @@ fi
 echo "📋 Fetching Trello NOW tasks..."
 TRELLO_TASKS=$(bash ~/clawd/scripts/trello-synthesis.sh 2>&1 | grep -A 20 "All NOW tasks")
 
-# Create daily note
-bash ~/clawd/scripts/obsidian.sh create "Daily/$TODAY" "# $DAY_NAME, $TODAY
+# Create daily note using obsidian.sh
+bash ~/clawd/scripts/obsidian.sh --vault personal create "Daily/$TODAY" "# $DAY_NAME, $TODAY
 
-## 🌅 Morning
+## 🎯 3-3-3 Focus
 
-- [ ] Check emails
-- [ ] Review Trello NOW
-- [ ] 
+### 🔴 3 Deep Work (high focus, 2h+ blocks)
+1. 
+2. 
+3. 
 
-## 🌞 Afternoon
+### 🟡 3 Maintenance (30-60 min each)
+1. 
+2. 
+3. 
 
-- [ ] 
-- [ ] 
-
-## 🌙 Evening
-
-- [ ] Plan tomorrow
-- [ ] End-of-day reflection
+### 🟢 3 Quick Wins (< 15 min each)
+1. 
+2. 
+3. 
 
 ---
 
-## 📋 Trello Tasks (NOW)
+## 📋 Trello NOW
 
 $TRELLO_TASKS
-
----
-
-## 📅 Calendar Events
-
-[Auto-pull pending - OAuth needs refresh]
 
 ---
 
@@ -66,8 +61,6 @@ $TRELLO_TASKS
 
 ## 🔗 Links
 
-- [[Projects/]]
-- [[Areas/]]
 - Previous: [[Daily/$(date -d 'yesterday' +%Y-%m-%d)]]
 
 ---

@@ -1,6 +1,6 @@
 {
   "lastChecks": {
-    "ccusage": 1772158680,
+    "ccusage": 1742169600,
     "email": 1742130867,
     "calendar": 1741814160,
     "trello": 1741987423,
@@ -8,5 +8,5 @@
     "memory_search": 1741814100
   },
   "alertHistory": [],
-  "notes": "Mar 16 20:58 - ccusage: $11.95 spent in March (day 16), daily avg $0.75, projected $23.25/month (under threshold). Mar 16 10:54 - Email check failed: OAuth invalid_grant (requires manual re-auth). Mar 15 13:23 - Trello: 4 tasks in NOW (healthy). Mar 12 14:56 - Calendar: OAuth token still invalid_grant. Needs manual re-auth to fix. Google services (email/calendar) blocked until OAuth re-auth."
+  "notes": "Mar 16 22:00 - ccusage: $18.91 spent in March (day 16), daily avg $1.18, projected $36.59/month (under $100 threshold, healthy). Mar 16 10:54 - Email check failed: OAuth invalid_grant (requires manual re-auth). Mar 15 13:23 - Trello: 4 tasks in NOW (healthy). Mar 12 14:56 - Calendar: OAuth token still invalid_grant. Needs manual re-auth to fix. Google services (email/calendar) blocked until OAuth re-auth."
 }
