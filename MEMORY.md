@@ -60,22 +60,70 @@
 
 ---
 
-## 2026-03-18 - State Sync & Script Fixes
+## 2026-03-18 - Full Job Pipeline Stack Built
 
 ### Script Vault Path Migration
-- **14 scripts** had stale path `"Obsidian Vault"` → all fixed to correct `"Obsidian Vaults/Ob_*_Vault"`
-- Mapping: AI Agency/Jobs → Ob_Business_Vault | Papers → Ob_Research_Vault | Daily/Backup/Review → Ob_Perso_Vault | Trello sync → Ob_Robotics_Vault
-- MEMORY.md updated to reflect current project state
+- **14 scripts** fixed: `"Obsidian Vault"` → `"Obsidian Vaults/Ob_*_Vault"`
+- Committed: `8b74f85`
 
-### OAuth Status
-- Google tokens valid (`zeclawd@gmail.com`) — expiry rotates automatically
-- Token expiry ~3h at time of check; auto-refresh in place
+### Job Application Stack — Full Architecture (built tonight)
 
-### Key State (as of tonight)
-- Job pipeline: built ✅, not triggered ❌
-- Position Radar: designed ✅, not built ❌
-- AI Agency: assets ready ✅, MVP not built ❌
-- LAI deadline: Friday March 21 🔴
+```
+Position Radar         → scans 15 companies daily (Greenhouse/Lever APIs)
+  ~/projects/position-radar/radar.py
+  Scoring: 0-100 rubric, alert threshold ≥70, cron 9am Brazil
+  Top match: Apptronik Senior Autonomy SW Eng = 83/100
+
+JOB_QUEUE.md           → URL queue in Ob_Business_Vault
+  Auto-populated by Position Radar when score ≥65
+  Manual URLs also supported
+
+process_queue.py       → batch processor (reads queue, runs pipeline per job)
+  ~/projects/job-pipeline/process_queue.py
+  Uses: ~/miniconda3/bin/conda run -n job-pipeline python process_queue.py
+
+7-Agent Pipeline       → per job: fit analysis + resume tailoring + narratives + audit
+  LLM: claude --print -p (fixed 2026-03-18, real scores now)
+  Profile: data/theo-profile.json
+
+Output per job:
+  - application.json (fit score, tailored bullets, motivation, audit)
+  - resume.pdf (fpdf2, ATS-safe single column)
+  - cover_letter.pdf (professional letter format)
+  - Saved to: Ob_Business_Vault/Projects/Job Application Pipeline/results/{slug}/
+  - Uploaded to: Google Drive → Job Applications/2026-03/{Company} — {Role}/
+
+Application Tracker    → SQLite at ~/projects/job-pipeline/tracker.db
+  Tables: applications, rounds, documents
+  CLI: conda run -n job-pipeline python -m tracker.cli status
+  Obsidian notes: .../Job Application Pipeline/applications/{slug}/index.md
+  Daily digest cron: 9am → Telegram (silent if no active apps)
+
+Task Ledger            → ~/clawd/memory/active-tasks.json
+  CLI: bash ~/clawd/scripts/task-ledger.sh status
+  Pretty: python3 ~/clawd/scripts/task-status.py
+```
+
+### Active Applications (as of 2026-03-18)
+| Company | Role | Fit | Status |
+|---------|------|-----|--------|
+| Apptronik | Senior Autonomy SW Eng | 32% | to_apply |
+| Apptronik | SW Eng — Dexterity | 25% | to_apply |
+| Apptronik | RL Engineer | 26% | to_apply |
+| Amazon | Robotics ME (Frontier AI) | 50% | to_apply |
+| Singapore Tech | Research Eng (Multimodal AI) | 35% | to_apply |
+| CERN | Industrial Automation Eng | 15% | to_apply |
+
+### OAuth Status ✅
+- Google Drive + Calendar confirmed working (tested 2026-03-18)
+- Real Drive upload wired into pipeline
+
+### Key State
+- Job pipeline: fully built and tested ✅
+- Position Radar: live, daily cron ✅
+- Application Tracker: live, 6 entries ✅
+- AI Agency: assets ready (landing page, LinkedIn list, Upwork copy), MVP not built ❌
+- LAI deadline: Friday March 21 🔴 (3 days)
 
 ---
 

@@ -39,13 +39,13 @@
     {
       "id": "m3n4o5p6",
       "label": "Google OAuth Fix",
-      "status": "failed",
+      "status": "done",
       "agent": "claude",
       "session_id": "b56b62a0-0204-467b-8a65-5152d9d7cd7a",
       "started_at": "2026-03-18T02:15:00-03:00",
-      "completed_at": "2026-03-18T02:30:00-03:00",
+      "completed_at": "2026-03-18T05:05:09.616080+00:00",
       "summary": "Fix expired Google OAuth refresh token for zeclawd@gmail.com",
-      "result": null,
+      "result": "OAuth re-authenticated, Drive + Calendar both confirmed working",
       "error": "Refresh token revoked/expired \u2014 requires manual re-authorization. Auth URL sent, waiting on user to paste code"
     },
     {
@@ -255,15 +255,75 @@
     {
       "id": "b46dc95f",
       "label": "Queue Re-run \u2014 Real Scores + PDFs",
-      "status": "running",
+      "status": "done",
       "agent": "claude",
       "session_id": null,
       "started_at": "2026-03-18T04:52:41.535279+00:00",
-      "completed_at": null,
+      "completed_at": "2026-03-18T04:53:57.689046+00:00",
       "summary": "Re-process all 6 jobs with LLM parser fixed, PDF + cover letter generation",
+      "result": "queue was empty \u2014 URLs reset, re-firing",
+      "error": null
+    },
+    {
+      "id": "c9500b29",
+      "label": "Queue Re-run F2 \u2014 Real Scores + PDFs",
+      "status": "done",
+      "agent": "claude",
+      "session_id": null,
+      "started_at": "2026-03-18T04:53:57.721402+00:00",
+      "completed_at": "2026-03-18T05:00:36.953371+00:00",
+      "summary": "6 jobs with LLM parser fixed, PDF + cover letter per job",
+      "result": "6/6 success, PDFs + cover letters in Obsidian vault, real LLM scores",
+      "error": null
+    },
+    {
+      "id": "61a8b534",
+      "label": "Google Drive Real Upload",
+      "status": "done",
+      "agent": "claude",
+      "session_id": null,
+      "started_at": "2026-03-18T05:06:35.490735+00:00",
+      "completed_at": "2026-03-18T05:09:48.814536+00:00",
+      "summary": "Wire OAuth Drive upload into process_queue.py \u2014 JSON + resume.pdf + cover_letter.pdf per application",
+      "result": "Drive upload live \u2014 real folder + 3 files uploaded for Apptronik Senior Autonomy",
+      "error": null
+    },
+    {
+      "id": "78834702",
+      "label": "Queue Re-run G2 \u2014 Drive Upload",
+      "status": "running",
+      "agent": "claude",
+      "session_id": null,
+      "started_at": "2026-03-18T05:14:37.539223+00:00",
+      "completed_at": null,
+      "summary": "Upload remaining 5 jobs to Drive",
+      "result": null,
+      "error": null
+    },
+    {
+      "id": "3cc5b2e4",
+      "label": "Tracker Dedup",
+      "status": "done",
+      "agent": "claude",
+      "session_id": null,
+      "started_at": "2026-03-18T05:14:37.570641+00:00",
+      "completed_at": "2026-03-18T05:15:16.832064+00:00",
+      "summary": "Clean 9 entries down to 6, remove duplicate runs",
+      "result": "9 entries \u2192 6, duplicates removed, best data retained per job",
+      "error": null
+    },
+    {
+      "id": "e7054336",
+      "label": "MEMORY.md Update",
+      "status": "running",
+      "agent": "claude",
+      "session_id": null,
+      "started_at": "2026-03-18T05:14:37.602532+00:00",
+      "completed_at": null,
+      "summary": "Document tonight's full system architecture",
       "result": null,
       "error": null
     }
   ],
-  "last_updated": "2026-03-18T04:52:41.535298+00:00"
+  "last_updated": "2026-03-18T05:15:16.832092+00:00"
 }
