@@ -31,6 +31,7 @@
 - Multilingual: French/English/Portuguese
 - Values: Clarity, efficiency, low friction
 - Expects: Observe first, act decisively, minimal questions
+- **After completing major task batches:** Short, elegantly condensed prose summary — not bullet reports
 
 ---
 
@@ -46,14 +47,35 @@
 
 ## Ongoing Tasks
 
-### Active Projects (from Trello NOW)
-1. Clawdbot setup (in progress)
-2. Presentation RM (6 checklist items)
-3. Job Application: CERN (CV, motivation letter)
+### Active Projects (as of 2026-03-17)
+1. **Job Application Pipeline** — multi-agent LangChain system at `~/projects/job-pipeline/`, production-ready. 4 URLs queued in JOB_QUEUE.md (2x CERN, Amazon Robotics, Singapore Tech). Not yet triggered.
+2. **Position Radar** — architecture complete (Obsidian), not yet built. Design at `Ob_Business_Vault/Projects/Job Application Pipeline/Position Radar - Architecture.md`
+3. **AI Agency** — execution roadmap done, landing page copy done, LinkedIn target list done (50 companies), Upwork profile copy done. MVP build pending.
+4. **LAI Paper** — deadline Friday March 21 🔴
+5. **Personal Website** — 70% complete, blocked on photos/screenshots + resume PDF
 
-### Deferred Setup Items
-- Audio transcription (Whisper - large dependencies issue)
-- Multilingual interface configuration
+### Deferred
+- Audio transcription (Whisper - large dependencies)
+- Brisa+ paper setup (in progress)
+
+---
+
+## 2026-03-18 - State Sync & Script Fixes
+
+### Script Vault Path Migration
+- **14 scripts** had stale path `"Obsidian Vault"` → all fixed to correct `"Obsidian Vaults/Ob_*_Vault"`
+- Mapping: AI Agency/Jobs → Ob_Business_Vault | Papers → Ob_Research_Vault | Daily/Backup/Review → Ob_Perso_Vault | Trello sync → Ob_Robotics_Vault
+- MEMORY.md updated to reflect current project state
+
+### OAuth Status
+- Google tokens valid (`zeclawd@gmail.com`) — expiry rotates automatically
+- Token expiry ~3h at time of check; auto-refresh in place
+
+### Key State (as of tonight)
+- Job pipeline: built ✅, not triggered ❌
+- Position Radar: designed ✅, not built ❌
+- AI Agency: assets ready ✅, MVP not built ❌
+- LAI deadline: Friday March 21 🔴
 
 ---
 
@@ -87,22 +109,20 @@
 - **Telegram Group Policy:** Changed to "open" to accept group messages
 - **Node Runtime:** NVM warning acknowledged (functional, manual fix available if needed)
 
-### Obsidian Integration ✅
-- **Vault:** `/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault`
-- **Helper Script:** `~/clawd/scripts/obsidian.sh`
-- **Structure:** PARA method (Projects, Areas, Resources, Archive)
-- **Capabilities:**
-  - Create notes programmatically from Telegram
-  - Search vault (name + content)
-  - Daily note automation
-  - Knowledge graph with [[wikilinks]]
-- **Integration:** Ready for co-working loop with Trello + Memory + QMD
-- **Documentation:** `~/clawd/docs/OBSIDIAN-SECOND-BRAIN.md`
+### Obsidian Integration ✅ (4 vaults since 2026-03-17)
+- **Vaults:** `/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/`
+  - `Ob_Research_Vault` — academic papers, CERN, science
+  - `Ob_Business_Vault` — jobs, AI agency, personal website
+  - `Ob_Robotics_Vault` — Zé system, productivity, tools
+  - `Ob_Perso_Vault` — daily notes, health, habits, trading
+- **Helper Script:** `~/clawd/scripts/obsidian.sh --vault research|business|tech|personal`
+- **Structure:** PARA method in all 4 vaults (66 notes migrated)
+- **All scripts updated** to point to correct vault paths (2026-03-18)
 
 ### Key Decision
 - **Two-tier memory system:**
   - System logs: `~/clawd/memory/` (raw, for QMD search)
-  - Knowledge base: Obsidian vault (curated, human-readable)
+  - Knowledge base: Obsidian vaults (curated, human-readable)
   - Separation: Machine context vs human knowledge
 
 ### LAI Paper Automated Workflow ⚠️ CRITICAL

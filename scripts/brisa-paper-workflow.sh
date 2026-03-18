@@ -2,7 +2,7 @@
 # Brisa+ Paper Workflow Automation
 # Based on LAI paper system with Brisa+ specifics
 
-VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault"
+VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Research_Vault"
 PROJECT_PATH="$VAULT_PATH/Projects/Academic Research/Brisa+ Paper"
 FEEDBACK_LOG="$PROJECT_PATH/Feedback Log.md"
 

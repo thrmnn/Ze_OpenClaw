@@ -2,7 +2,7 @@
 # LAI Paper Workflow Automation
 # Handles: feedback → propose changes → implement → compile → email
 
-VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault"
+VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Research_Vault"
 PROJECT_PATH="$VAULT_PATH/Projects/Academic Research/LAI Paper"
 FEEDBACK_LOG="$PROJECT_PATH/Feedback Log.md"
 

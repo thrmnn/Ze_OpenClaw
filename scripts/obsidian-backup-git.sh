@@ -2,7 +2,7 @@
 # Automated Git backup for Obsidian vault
 # Run daily via cron or manually
 
-VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault"
+VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Perso_Vault"
 cd "$VAULT_PATH" || exit 1
 
 # Check if git repo exists

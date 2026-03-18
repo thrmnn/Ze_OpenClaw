@@ -26,7 +26,7 @@ show_focus() {
     
     # Try to read from Obsidian daily note
     TODAY=$(date +%Y-%m-%d)
-    DAILY_NOTE="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault/Daily/$TODAY.md"
+    DAILY_NOTE="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Perso_Vault/Daily/$TODAY.md"
     
     if [[ -f "$DAILY_NOTE" ]]; then
         # Extract top 3 incomplete tasks

@@ -4,7 +4,7 @@
 
 set -e
 
-PROJECT_DIR="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault/Projects/AI Agency"
+PROJECT_DIR="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Business_Vault/Projects/AI Agency"
 cd "$PROJECT_DIR"
 
 echo "🧹 AI Agency Project Update"

@@ -5,7 +5,7 @@
 set -euo pipefail
 
 # Configuration
-OBSIDIAN_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault/Projects/AI Agency"
+OBSIDIAN_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Business_Vault/Projects/AI Agency"
 WORKSPACE_PATH="$HOME/projects/ai-agency/docs"
 LOG_FILE="$HOME/clawd/logs/obsidian-sync.log"
 

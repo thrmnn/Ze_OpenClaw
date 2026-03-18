@@ -2,7 +2,7 @@
 # Obsidian helper script for WSL
 # Auto-switches to vault directory for operations
 
-VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault"
+VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Perso_Vault"
 
 case "$1" in
   search|search-content)

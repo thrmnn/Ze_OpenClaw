@@ -1,7 +1,7 @@
 #!/bin/bash
 # Sync Trello NOW tasks to today's Obsidian daily note
 
-VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault"
+VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Robotics_Vault"
 TODAY=$(date +%Y-%m-%d)
 DAILY_NOTE="$VAULT_PATH/Daily/$TODAY.md"
 

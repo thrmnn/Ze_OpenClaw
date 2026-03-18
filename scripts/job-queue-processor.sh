@@ -4,7 +4,7 @@
 set -e
 
 # Configuration
-OBSIDIAN_VAULT="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault"
+OBSIDIAN_VAULT="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Business_Vault"
 JOB_QUEUE="$OBSIDIAN_VAULT/Projects/Job Application Pipeline/JOB_QUEUE.md"
 RESULTS_DIR="$OBSIDIAN_VAULT/Projects/Job Application Pipeline/results"
 PIPELINE_DIR="$HOME/clawd/job-pipeline"

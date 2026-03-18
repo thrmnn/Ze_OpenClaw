@@ -2,7 +2,7 @@
 # Weekly review automation
 # Generates summary note every Sunday evening
 
-VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault"
+VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Perso_Vault"
 WEEK_NUM=$(date +%U)
 YEAR=$(date +%Y)
 TODAY=$(date +%Y-%m-%d)

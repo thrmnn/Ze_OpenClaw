@@ -2,7 +2,7 @@
 # Physical SSD backup for Obsidian vault
 # Run weekly for redundancy
 
-VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vault"
+VAULT_PATH="/mnt/c/Users/theoh/OneDrive/Documents/Obsidian Vaults/Ob_Perso_Vault"
 BACKUP_BASE="/mnt/e/Backups/Obsidian"  # Adjust to your SSD mount point
 TIMESTAMP=$(date '+%Y-%m-%d_%H%M')
 BACKUP_DIR="$BACKUP_BASE/$TIMESTAMP"
