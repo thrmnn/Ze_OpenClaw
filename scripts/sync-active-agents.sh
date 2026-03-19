@@ -81,3 +81,6 @@ fi
 
 # Save current active keys for next run comparison
 echo "$SESSIONS" | jq '[.sessions[].key]' > "$STATE_FILE" 2>/dev/null || true
+
+# Also push git status for all projects (piggyback on this cron)
+"$SCRIPT_DIR/push-git-status.sh" 2>/dev/null || true
