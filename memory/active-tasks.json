@@ -291,13 +291,13 @@
     {
       "id": "78834702",
       "label": "Queue Re-run G2 \u2014 Drive Upload",
-      "status": "running",
+      "status": "done",
       "agent": "claude",
       "session_id": null,
       "started_at": "2026-03-18T05:14:37.539223+00:00",
-      "completed_at": null,
+      "completed_at": "2026-03-18T05:23:13.521002+00:00",
       "summary": "Upload remaining 5 jobs to Drive",
-      "result": null,
+      "result": "5/6 uploaded to Drive, Amazon failed on location=None (fixing separately)",
       "error": null
     },
     {
@@ -315,15 +315,27 @@
     {
       "id": "e7054336",
       "label": "MEMORY.md Update",
-      "status": "running",
+      "status": "done",
       "agent": "claude",
       "session_id": null,
       "started_at": "2026-03-18T05:14:37.602532+00:00",
-      "completed_at": null,
+      "completed_at": "2026-03-18T05:15:56.758447+00:00",
       "summary": "Document tonight's full system architecture",
-      "result": null,
+      "result": "MEMORY.md updated with full stack architecture, active apps, OAuth status",
+      "error": null
+    },
+    {
+      "id": "86e944ca",
+      "label": "Resume v2 \u2014 Opus, truly tailored",
+      "status": "done",
+      "agent": "claude",
+      "session_id": null,
+      "started_at": "2026-03-18T05:24:56.248913+00:00",
+      "completed_at": "2026-03-18T05:37:58.517330+00:00",
+      "summary": "Rewrite generator: one LLM call per doc, job-specific, no template fallback, test on Apptronik Senior Autonomy",
+      "result": "resume_v2.pdf + cover_letter_v2.pdf generated for Apptronik Senior Autonomy, uploaded to Drive",
       "error": null
     }
   ],
-  "last_updated": "2026-03-18T05:15:16.832092+00:00"
+  "last_updated": "2026-03-18T05:37:58.517358+00:00"
 }
