@@ -45,6 +45,7 @@ case "$ACTION" in
     STATUS="working"
     CURRENT_TASK="$MSG"
     STATS=""
+    SESSION_STARTED_AT=$(date +%s%3N)
     ;;
   progress)
     STATUS="working"
@@ -77,8 +78,21 @@ if command -v jq &>/dev/null; then
   if [[ -n "$STATS" ]]; then
     PAYLOAD=$(echo "$PAYLOAD" | jq '. + {stats: {completionTime: 0, success: true}}')
   fi
+  if [[ "$ACTION" == "start" ]]; then
+    PAYLOAD=$(echo "$PAYLOAD" | jq --argjson ts "$SESSION_STARTED_AT" '. + {sessionStartedAt: $ts}')
+    if [[ -n "${SESSION_ID:-}" ]]; then
+      PAYLOAD=$(echo "$PAYLOAD" | jq --arg sid "$SESSION_ID" '. + {sessionId: $sid}')
+    fi
+  fi
 else
-  PAYLOAD="{\"agentId\":\"$AGENT_ID\",\"status\":\"$STATUS\",\"currentTask\":\"$CURRENT_TASK\"$STATS}"
+  EXTRA=""
+  if [[ "$ACTION" == "start" ]]; then
+    EXTRA=",\"sessionStartedAt\":$SESSION_STARTED_AT"
+    if [[ -n "${SESSION_ID:-}" ]]; then
+      EXTRA="$EXTRA,\"sessionId\":\"$SESSION_ID\""
+    fi
+  fi
+  PAYLOAD="{\"agentId\":\"$AGENT_ID\",\"status\":\"$STATUS\",\"currentTask\":\"$CURRENT_TASK\"$STATS$EXTRA}"
 fi
 
 CURL_OPTS=(-s -X POST "$MC_URL" -H "Content-Type: application/json" -d "$PAYLOAD")
