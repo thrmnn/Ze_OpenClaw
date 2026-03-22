@@ -1,12 +1,12 @@
 {
   "lastChecks": {
-    "ccusage": 1773945526,
-    "email": 1773945526,
-    "calendar": 1773945526,
-    "trello": 1773945526,
-    "drive": 1773945526,
-    "memory_search": 1773945526
+    "ccusage": 1774219773,
+    "email": 1774219357,
+    "calendar": 1774219773,
+    "mission_control": 1774041300,
+    "drive": 1774219357,
+    "memory_search": 1774219773
   },
   "alertHistory": [],
-  "notes": "Mar 19 15:38 BRT - Timestamps corrected (were 1y stale due to epoch bug). Afternoon rotation: email clean (201 unread, all noise — Trello admin + Google alerts), Trello 4 NOW cards (no overdue), ccusage $0 (data unavailable). LAI deadline tomorrow Mar 21."
+  "notes": "Mar 20 18:12 BRT - Trello fully deprecated. Replaced by Mission Control Kanban at /tasks. All Trello scripts archived. heartbeat-state migrated trello \u2192 mission_control key."
 }

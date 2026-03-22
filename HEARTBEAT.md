@@ -14,11 +14,11 @@
 - Flag urgent messages (based on sender/subject)
 - Summarize count only (don't list all)
 
-### Trello NOW Cards (1x daily: afternoon 14-17)
-- Run: `bash ~/clawd/scripts/trello-synthesis.sh`
-- Flag overdue or blocked cards
-- Alert if >15 cards in NOW (overwhelmed)
-- Brief status summary
+### Mission Control Kanban (1x daily: afternoon 14-17)
+- Check: https://mission-control-ruby-zeta.vercel.app/tasks
+- Flag blocked or overdue tasks
+- Alert if task board is overwhelmed
+- Brief status summary (no script needed — use MC dashboard directly)
 
 ### Calendar Check (2x daily: morning 9-10, afternoon 16-17)
 - Run: `bash ~/clawd/scripts/calendar-check.sh`

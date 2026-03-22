@@ -17,11 +17,12 @@ STATE_FILE="${OPENCLAW_STATE_DIR:-$HOME/.openclaw}/mc-sync-state.json"
 # Active = updated in last 5 minutes
 ACTIVE_WINDOW=5
 
-# Get all sessions active in the last 5 minutes
-SESSIONS=$(openclaw sessions --all-agents --active "$ACTIVE_WINDOW" --json 2>/dev/null || echo '{"sessions":[]}')
+# Get all sessions via openclaw status (--all-agents --active flags don't exist)
+# Fall back to empty set — MC sync is best-effort
+SESSIONS=$(timeout 8 openclaw sessions list --json 2>/dev/null || echo '{"sessions":[]}')
 
 # Parse sessions and report to MC
-echo "$SESSIONS" | jq -r '.sessions[] | @base64' | while read -r encoded; do
+echo "$SESSIONS" | jq -r '.sessions[] | @base64' 2>/dev/null | while read -r encoded; do
   SESSION=$(echo "$encoded" | base64 -d)
 
   KEY=$(echo "$SESSION" | jq -r '.key')
@@ -56,7 +57,7 @@ echo "$SESSIONS" | jq -r '.sessions[] | @base64' | while read -r encoded; do
     UPTIME="$((AGE_MIN / 60))h$((AGE_MIN % 60))m"
   fi
 
-  "$MC_REPORT" progress "$NAME" "Active ${UPTIME} | ${TOKENS} tokens | ${MODEL}"
+  timeout 5 "$MC_REPORT" progress "$NAME" "Active ${UPTIME} | ${TOKENS} tokens | ${MODEL}" 2>/dev/null || true
 done
 
 # Check for sessions that were previously active but are now gone
@@ -74,7 +75,7 @@ if [[ -f "$STATE_FILE" ]]; then
         *:main)     NAME="Main Session" ;;
         *)          NAME="Agent Session" ;;
       esac
-      "$MC_REPORT" done "$NAME" "Session ended"
+      timeout 5 "$MC_REPORT" done "$NAME" "Session ended" 2>/dev/null || true
     fi
   done
 fi
@@ -82,5 +83,7 @@ fi
 # Save current active keys for next run comparison
 echo "$SESSIONS" | jq '[.sessions[].key]' > "$STATE_FILE" 2>/dev/null || true
 
-# Also push git status for all projects (piggyback on this cron)
-"$SCRIPT_DIR/push-git-status.sh" 2>/dev/null || true
+# Also push git status for all projects (if script exists)
+if [[ -x "$SCRIPT_DIR/push-git-status.sh" ]]; then
+  timeout 10 "$SCRIPT_DIR/push-git-status.sh" 2>/dev/null || true
+fi

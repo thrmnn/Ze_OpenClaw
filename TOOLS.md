@@ -11,8 +11,7 @@ Quick reference for environment-specific setup. Full details: `docs/tools-setup-
   - `Ob_Robotics_Vault` (Zé system, productivity, tools)
   - `Ob_Perso_Vault` (daily notes, health, trading, personal)
 - **Obsidian helper:** `bash ~/clawd/scripts/obsidian.sh --vault <name> <command>`
-- **Trello board:** "Zé Dashboard" (ID: 699dc91ad27a2301f3acc5f1)
-- **Trello synthesis:** `bash ~/clawd/scripts/trello-synthesis.sh`
+- **Mission Control:** https://mission-control-ruby-zeta.vercel.app/ (Kanban at /tasks — replaces Trello)
 - **Voice transcribe:** `python3 scripts/audio-transcribe-local.py <file> --model tiny`
 - **Email account:** zeclawd@gmail.com
 
@@ -29,7 +28,7 @@ Now integrated as OpenClaw memory backend. `memory_search` and `memory_get` tool
 |---------|--------|-------|
 | Anthropic API | ✅ | claude-sonnet-4-6 default |
 | Gmail/Drive/Calendar | ✅ | OAuth, auto-refresh |
-| Trello MCP | ✅ | Board: Zé Dashboard |
+| Mission Control | ✅ | Kanban at /tasks — replaces Trello |
 | Brave Search | ✅ | Web search enabled |
 | Obsidian | ✅ | PARA vault, morning routine |
 | QMD Memory | ✅ | Backend for memory_search |

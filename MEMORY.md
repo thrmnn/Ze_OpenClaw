@@ -13,12 +13,12 @@
 
 ### Services Connected
 1. **Telegram:** @Tzinho_lclclawdbot - main interface
-2. **Trello:** Board "Zé Dashboard" - task management (switched 2026-02-24)
+2. **Mission Control Kanban:** https://mission-control-ruby-zeta.vercel.app/tasks — task management (replaced Trello 2026-03-20)
 3. **Google Workspace:** zeclawd@gmail.com - dedicated email/drive for shared documents
 
 ### MCP Servers Configured
 - Filesystem MCP (workspace access)
-- Trello MCP (board/card management)
+- ~~Trello MCP~~ — **ARCHIVED 2026-03-20** (replaced by Mission Control)
 - Google Workspace MCP (Gmail + Drive + Sheets)
 
 ### Key Learnings
