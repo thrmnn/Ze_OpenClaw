@@ -1,12 +1,11 @@
 {
   "lastChecks": {
-    "ccusage": 1774317513,
-    "email": 1774273242,
-    "calendar": 1774294746,
-    "mission_control": 1774284064,
-    "drive": 1774282166,
-    "memory_search": 1774284064
+    "ccusage": 1774889104,
+    "email": 1774889104,
+    "calendar": 1774896800,
+    "mission_control": 1774896800,
+    "drive": 1774889104,
+    "daily_note": 1774889104
   },
-  "alertHistory": [],
-  "notes": "Mar 20 18:12 BRT - Trello fully deprecated. Replaced by Mission Control Kanban at /tasks. All Trello scripts archived. heartbeat-state migrated trello \u2192 mission_control key."
+  "notes": "Mar 30 15:52 BRT - calendar: clear 24h. MC memory search: no new urgent tasks surfaced. All other checks current from 13:43."
 }
