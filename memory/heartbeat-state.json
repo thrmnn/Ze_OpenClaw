@@ -1,11 +1,11 @@
 {
   "lastChecks": {
-    "ccusage": 1774911685,
-    "email": 1774978053,
-    "calendar": 1774984934,
-    "mission_control": 1774984934,
-    "drive": 1774978260,
-    "daily_note": 1774978053
+    "ccusage": 1775083721,
+    "email": 1775083721,
+    "calendar": 1775046360,
+    "mission_control": 1775072731,
+    "drive": 1775072731,
+    "daily_note": 1775041200
   },
-  "notes": "Mar 31 16:21 BRT - Calendar: no events next 24h. LAI Paper green (last commit 42min ago, Théo working). Binance geo-blocked (451) ongoing. Morning summary sent."
+  "notes": "Apr 1 19:47 BRT - Email: 8 unread, all old/non-urgent (self-sent March 27 brief, Google security alerts, Trello notifications). ccusage April: $14.10 so far (day 1), daily rate $14.10, projected ~$437/month if pace holds \u2014 driven by claude-opus-4-6. March total was $1,339.88 (heavy agent sprints). No alerts needed."
 }
