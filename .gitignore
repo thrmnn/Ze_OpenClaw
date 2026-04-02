@@ -51,3 +51,4 @@ test-*.sh
 __pycache__/
 *.pyc
 *.pyo
+Miniforge3*.sh
