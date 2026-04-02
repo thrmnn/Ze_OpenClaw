@@ -1,0 +1,37 @@
+{
+  "date": "2026-02-20",
+  "voices": {
+    "karpathy": [
+      {
+        "text": "Very interested in what the coming era of highly bespoke software might look like.\n\nExample from this morning - I've become a bit loosy goosy with my cardio recently so I decided to do a more srs, regimented experiment to try to lower my Resting Heart Rate from 50 -> 45, over experiment duration of 8 weeks. The primary way to do this is to aspire to a certain sum total minute goals in Zone 2 cardio and 1 HIIT/week.\n\n1 hour later I vibe coded this super custom dashboard for this very specific experiment that shows me how I'm tracking. Claude had to reverse engineer the Woodway treadmill cloud API to pull raw data, process, filter, debug it and create a web UI frontend to track the experiment. It wasn't a fully smooth experience and I had to notice and ask to fix bugs e.g. it screwed up metric vs. imperial system units and it screwed up on the calendar matching up days to dates etc.\n\nBut I still feel like the overall direction is clear:\n1) There will never be (and shouldn't be) a specific app on the app store for this kind of thing. I shouldn't have to look for, download and use some kind of a \"Cardio experiment tracker\", when this thing is ~300 lines of code that an LLM agent will give you in seconds. The idea of an \"app store\" of a long tail of discrete set of apps you choose from feels somehow wrong and outdated when LLM agents can improvise the app on the spot and just for you.\n2) Second, the industry has to reconfigure into a set of services of sensors and actuators with agent native ergonomics. My Woodway treadmill is a sensor - it turns physical state into digital knowledge. It shouldn't maintain some human-readable frontend and my LLM agent shouldn't have to reverse engineer it, it should be an API/CLI easily usable by my agent. I'm a little bit disappointed (and my timelines are correspondingly slower) with how slowly this progression is happening in the industry overall. 99% of products/services still don't have an AI-native CLI yet. 99% of products/services maintain .html/.css docs like I won't immediately look for how to copy paste the whole thing to my agent to get something done. They give you a list of instructions on a webpage to open this or that url and click here or there to do a thing. In 2026. What am I a computer? You do it. Or have my agent do it.\n\nSo anyway today I am impressed that this random thing took 1 hour (it would have been ~10 hours 2 years ago). But what excites me more is thinking through how this really should have been 1 minute tops. What has to be in place so that it would be 1 minute? So that I could simply say \"Hi can you help me track my cardio over the next 8 weeks\", and after a very brief Q&A the app would be up. The AI would already have a lot personal context, it would gather the extra needed data, it would reference and search related skill libraries, and maintain all my little apps/automations.\n\nTLDR the \"app store\" of a set of discrete apps that you choose from is an increasingly outdated concept all by itself. The future are services of AI-native sensors & actuators orchestrated via LLM glue into highly custom, ephemeral apps. It's just not here yet.",
+        "url": "https://nitter.net/karpathy/status/2024583544157458452#m",
+        "date": "2026-02-19T20:35:06"
+      }
+    ],
+    "nvidiarobotics": [
+      {
+        "text": "Remember this moment with @NEURARobotics at #NVIDIAGTC last year? \ud83d\udc9a\n\nJoin us this March at GTC for our Physical AI Days (March 16\u201317) and live demos on the show floor. \n\nSee you there \ud83d\udc4b https://nvda.ws/46WU1Ek",
+        "url": "https://nitter.net/NVIDIARobotics/status/2024520724690489660#m",
+        "date": "2026-02-19T16:25:29"
+      }
+    ],
+    "asimovinc": [
+      {
+        "text": "Building Notes #1: We're improving Asimov's gait. Got this on the first try, simulation to firmware transfer worked. Looks a bit like C3PO.",
+        "url": "https://nitter.net/asimovinc/status/2024772390451089916#m",
+        "date": "2026-02-20T09:05:30"
+      },
+      {
+        "text": "RT by @asimovinc: Unitree G1 couldn't keep pace with our development needs, so we built our own.\n\nWe bought a Unitree G1, started testing policies, then hit a knee issue that required a 2-month wait for a replacement part. Two months for one part stops your entire development cycle.\n\nEngineers need an open-source humanoid to build faster. When you can see inside without reverse engineering, source off-the-shelf parts, and 3D print components, iteration speeds up dramatically. You fail, build, and ship faster.\n\nSo we built our own humanoid robot and open-sourced it. Everything is on GitHub. You can start building today.",
+        "url": "https://nitter.net/asimovinc/status/2024493172668453030#m",
+        "date": "2026-02-19T14:36:00"
+      },
+      {
+        "text": "Day 150 of building Asimov, an open-source humanoid. We're assembling Asimov v1. The torso is going on the legs now.",
+        "url": "https://nitter.net/asimovinc/status/2024422653076136375#m",
+        "date": "2026-02-19T09:55:47"
+      }
+    ]
+  },
+  "summary": "\u2022 @karpathy: Very interested in what the coming era of highly bespoke software might look like.\n\nExample from thi...\n\u2022 @nvidiarobotics: Remember this moment with @NEURARobotics at #NVIDIAGTC last year? \ud83d\udc9a\n\nJoin us this March at GTC for o...\n\u2022 @asimovinc: Building Notes #1: We're improving Asimov's gait. Got this on the first try, simulation to firmware ..."
+}

@@ -1,0 +1,53 @@
+# Secrets & credentials
+credentials/*.txt
+credentials/*.json
+credentials/*.env
+credentials/*.pem
+credentials/*.key
+!credentials/.gitkeep
+
+# Virtual environments
+venv*/
+envs/
+Miniforge3*/
+Miniforge3*.sh
+
+# Logs & temp
+*.log
+*.tmp
+*.tar.gz
+/tmp/
+temp-*.pdf
+
+# Build artifacts
+canvas/
+data/
+logs/
+
+# Large binary / media
+*.pdf
+*.mp3
+*.ogg
+*.wav
+*.mp4
+
+# Project subdirectories (separate repos)
+job-pipeline/
+mission-control/
+usage-monitor/
+ml-job-tailor/
+projects/
+skills/
+
+# OpenClaw internals
+.openclaw/
+.clawhub/
+.clawdhub/
+
+# Test scripts
+test-*.sh
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

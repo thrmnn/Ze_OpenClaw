@@ -1,0 +1,12 @@
+## Reporting to Mission Control
+At the START of your work, run:
+  bash ~/clawd/scripts/mc-agent-report.sh start "AGENT_NAME" "brief task description"
+
+At each major milestone, run:
+  bash ~/clawd/scripts/mc-agent-report.sh progress "AGENT_NAME" "what you just completed"
+
+When COMPLETELY DONE, run:
+  bash ~/clawd/scripts/mc-agent-report.sh done "AGENT_NAME" "one-line summary of all outcomes"
+
+If you hit an error you cannot recover from:
+  bash ~/clawd/scripts/mc-agent-report.sh error "AGENT_NAME" "what failed and why"

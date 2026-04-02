@@ -1,0 +1,32 @@
+{
+  "date": "2026-02-24",
+  "voices": {
+    "nvidiarobotics": [
+      {
+        "text": "How is open\u2011source innovation transforming GenAI at the edge? \ud83e\udde0 \n\nJoin our experts live, Feb 24 at 9 AM PT to explore open models on Jetson like Nemotron, Cosmos, and Isaac GR00T, show real-world success stories, and preview what's coming at #NVIDIAGTC.\n\nAdd to calendar \ud83d\uddd3\ufe0f: https://nvda.ws/4s7syrV",
+        "url": "https://nitter.net/NVIDIARobotics/status/2026031302504562805#m",
+        "date": "2026-02-23T20:27:59"
+      }
+    ],
+    "asimovinc": [
+      {
+        "text": "We're almost done with Asimov's full body assembly. Now testing head designs. We plan to make this transparent so you can see the agent's emotional state through expressions inside.",
+        "url": "https://nitter.net/asimovinc/status/2026170430676251060#m",
+        "date": "2026-02-24T05:40:49"
+      }
+    ],
+    "lerobothf": [
+      {
+        "text": "R to @LeRobotHF: More details in the PR: https://github.com/huggingface/lerobot/pull/2974",
+        "url": "https://nitter.net/LeRobotHF/status/2025950521987629506#m",
+        "date": "2026-02-23T15:06:59"
+      },
+      {
+        "text": "Tired of waiting between episodes when recording physical AI datasets? Forget about that!\n\n\u274c Recording robot video datasets in LeRobot used to mean waiting minutes between episodes: every camera's frames had to be written as PNGs, read back, encoded to MP4, and cleaned up. With multiple cameras, high resolution, or long episodes, that blocking wait after each episode really adds up.\n\n\u26a1 We just merged streaming video encoding into LeRobot. Instead of the PNG round-trip, frames are now encoded to MP4 in real-time during capture in capable systems. By the time you finish recording the episode, the video is already done, making it near-instant to start the next one.\n\nOn top of that, we added cross-platform hardware encoder support with auto-detection. Just pass \"--dataset.vcodec=auto\" and LeRobot picks the best available GPU encoder, freeing your CPU for all the other tasks. \ud83d\ude80\n\n\"lerobot-record --dataset.streaming_encoding=true ...\"\n\nFull docs and tuning guide included: https://huggingface.co/docs/lerobot/main/en/streaming_video_encoding",
+        "url": "https://nitter.net/LeRobotHF/status/2025950419118071911#m",
+        "date": "2026-02-23T15:06:34"
+      }
+    ]
+  },
+  "summary": "\u2022 @nvidiarobotics: How is open\u2011source innovation transforming GenAI at the edge? \ud83e\udde0 \n\nJoin our experts live, Feb 24 at 9...\n\u2022 @asimovinc: We're almost done with Asimov's full body assembly. Now testing head designs. We plan to make this t...\n\u2022 @lerobothf: R to @LeRobotHF: More details in the PR: https://github.com/huggingface/lerobot/pull/2974..."
+}

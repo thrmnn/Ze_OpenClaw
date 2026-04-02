@@ -1,0 +1,238 @@
+{
+  "lastUpdated": "2026-03-19T21:30:00Z",
+  "completed": [
+    {
+      "task": "Landing Page Copy",
+      "completedAt": "2026-03-18T01:35:00-03:00",
+      "project": "ai-agency"
+    },
+    {
+      "task": "LinkedIn Target List (50 companies)",
+      "completedAt": "2026-03-18T01:45:00-03:00",
+      "project": "ai-agency"
+    },
+    {
+      "task": "Position Radar Architecture + Build",
+      "completedAt": "2026-03-18T04:50:52Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Google OAuth Fix",
+      "completedAt": "2026-03-18T05:05:09Z",
+      "project": "infrastructure"
+    },
+    {
+      "task": "Task Ledger System",
+      "completedAt": "2026-03-18T04:43:00Z",
+      "project": "infrastructure"
+    },
+    {
+      "task": "Job Pipeline Wire-up (scraper + process_queue + CLI)",
+      "completedAt": "2026-03-18T04:43:33Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Application Tracker (SQLite + Obsidian + Telegram)",
+      "completedAt": "2026-03-18T04:43:33Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Queue Run — 6 jobs processed",
+      "completedAt": "2026-03-18T04:43:33Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Script Vault Path Fix (14 scripts)",
+      "completedAt": "2026-03-18T04:43:33Z",
+      "project": "infrastructure"
+    },
+    {
+      "task": "LLM Parser Fix (call_claude --print)",
+      "completedAt": "2026-03-18T04:47:21Z",
+      "project": "job-search"
+    },
+    {
+      "task": "PDF Resume Generator (fpdf2)",
+      "completedAt": "2026-03-18T04:51:40Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Cover Letter Generator",
+      "completedAt": "2026-03-18T04:52:35Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Google Drive Upload Integration",
+      "completedAt": "2026-03-18T05:09:48Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Tracker Dedup (9→6 entries)",
+      "completedAt": "2026-03-18T05:15:16Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Resume v2 — Opus, truly tailored",
+      "completedAt": "2026-03-18T05:37:58Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Website redesign (researcher-first)",
+      "completedAt": "2026-03-19T20:00:00Z",
+      "project": "personal-brand"
+    },
+    {
+      "task": "AI Agency MVP (Streamlit + Qdrant + LlamaIndex)",
+      "completedAt": "2026-03-19T20:00:00Z",
+      "project": "ai-agency"
+    },
+    {
+      "task": "Test suite (37 pytest tests on job pipeline)",
+      "completedAt": "2026-03-19T20:00:00Z",
+      "project": "job-search"
+    },
+    {
+      "task": "Mission Control live data (agent panel + backlog + project health)",
+      "completedAt": "2026-03-19T20:00:00Z",
+      "project": "mission-control"
+    },
+    {
+      "task": "Trading bot scaffold (8 symbols, 2 strategies, signal-only)",
+      "completedAt": "2026-03-19T20:00:00Z",
+      "project": "trading"
+    },
+    {
+      "task": "Health & habits system (training + nutrition)",
+      "completedAt": "2026-03-19T20:00:00Z",
+      "project": "health"
+    },
+    {
+      "task": "Robotics learning path (12-week ETH curriculum)",
+      "completedAt": "2026-03-19T20:00:00Z",
+      "project": "education"
+    },
+    {
+      "task": "Daily note automation (8:05am cron)",
+      "completedAt": "2026-03-19T20:00:00Z",
+      "project": "infrastructure"
+    },
+    {
+      "task": "20 active crons verified",
+      "completedAt": "2026-03-19T20:00:00Z",
+      "project": "infrastructure"
+    }
+  ],
+  "inProgress": [
+    {
+      "task": "LAI paper — push to origin + final review",
+      "priority": "critical",
+      "project": "research",
+      "deadline": "2026-03-21",
+      "notes": "8 commits ahead of origin/main, 5 blocking items fixed"
+    }
+  ],
+  "backlog": [
+    {
+      "task": "Interview prep system (STAR bank + question banks + system design templates)",
+      "priority": "high",
+      "project": "job-search",
+      "notes": "Zero prep material exists. Critical for when calls start coming."
+    },
+    {
+      "task": "Networking tracker (SQLite + Obsidian + follow-up cron)",
+      "priority": "high",
+      "project": "job-search",
+      "notes": "Warm referrals 10x response rate. EPFL + MIT networks untapped."
+    },
+    {
+      "task": "Waymo PDFs — generate resume + cover letter",
+      "priority": "high",
+      "project": "job-search",
+      "notes": "84% fit, highest non-intern. PDFs not generated yet."
+    },
+    {
+      "task": "Anduril — add to Position Radar + run full pipeline",
+      "priority": "high",
+      "project": "job-search",
+      "notes": "Not in the 25-company list. Defense robotics, strong fit."
+    },
+    {
+      "task": "Skydio — add to Position Radar + run full pipeline",
+      "priority": "high",
+      "project": "job-search",
+      "notes": "Drone autonomy, strong robotics fit."
+    },
+    {
+      "task": "Agency CRM (SQLite + pipeline stages + follow-up cron)",
+      "priority": "high",
+      "project": "ai-agency",
+      "notes": "50 prospects, 5 proposals, 3 DMs — no tracking system."
+    },
+    {
+      "task": "LinkedIn profile update (MIT role + agency)",
+      "priority": "high",
+      "project": "personal-brand",
+      "notes": "30-minute task, massive visibility ROI."
+    },
+    {
+      "task": "Agency demo video (2-min Loom)",
+      "priority": "high",
+      "project": "ai-agency",
+      "notes": "Script written. Unblocks all outreach."
+    },
+    {
+      "task": "OAuth token health check in heartbeat cron",
+      "priority": "medium",
+      "project": "infrastructure",
+      "notes": "Broke silently on 2026-03-18. Need proactive detection."
+    },
+    {
+      "task": "tracker.db nightly backup to Drive",
+      "priority": "medium",
+      "project": "infrastructure",
+      "notes": "No backups. SQLite on WSL filesystem."
+    },
+    {
+      "task": "Application status transitions (to_apply → applied → interview → offer)",
+      "priority": "medium",
+      "project": "job-search",
+      "notes": "Currently all stuck at to_apply. Need pipeline tracking."
+    },
+    {
+      "task": "Auto follow-up email drafter (day 7 after apply)",
+      "priority": "medium",
+      "project": "job-search",
+      "notes": "No follow-up system. Most companies expect one."
+    },
+    {
+      "task": "Website analytics (Plausible/Umami)",
+      "priority": "medium",
+      "project": "personal-brand",
+      "notes": "Zero tracking. No idea if anyone visits."
+    },
+    {
+      "task": "Job pipeline analytics dashboard",
+      "priority": "medium",
+      "project": "job-search",
+      "notes": "No feedback loop on what's working."
+    },
+    {
+      "task": "Trading bot paper trade logger + P&L",
+      "priority": "low",
+      "project": "trading",
+      "notes": "Signal-only working. Need performance validation."
+    },
+    {
+      "task": "Dockerize job-pipeline + position-radar",
+      "priority": "low",
+      "project": "infrastructure",
+      "notes": "No snapshot, no reproducibility."
+    },
+    {
+      "task": "Position Radar auto-archive stale jobs (>14d)",
+      "priority": "low",
+      "project": "job-search",
+      "notes": "Queue fills up with no one processing."
+    }
+  ]
+}
