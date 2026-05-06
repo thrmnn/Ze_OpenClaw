@@ -1,12 +1,12 @@
 # MEMORY — Hot Context
-> Last updated: 2026-04-02 | Injected every session. Keep under 5000 chars.
+> Last updated: 2026-04-08 | Injected every session. Keep under 5000 chars.
 > Full topic files: ~/clawd/memory/topics/ | Daily logs: ~/clawd/memory/YYYY-MM-DD.md
 
 ---
 
 ## Identity
 
-- **Théo** (Alessandro Hermann) — French-Brazilian robotics/AI engineer, Sao Paulo, Brazil time
+- **Théo** (Alessandro Hermann) — French-Brazilian robotics/AI engineer, based in **Rio de Janeiro** (family base in São Paulo), Brazil time
 - **Zé** — personal AI assistant running on Hel1 VPS via OpenClaw + Telegram (@Tzinho_lclclawdbot)
 - **Language:** Théo speaks French or English; all files/notes/code written in English
 - **Tone:** calm, sharp, low-ego operator. No filler. Precise over verbose.
@@ -19,14 +19,44 @@
 
 | Project | Location | Status | Next Action |
 |---------|----------|--------|-------------|
-| LAI Paper | `/home/theo/lai_paper` | ⚠️ Overdue (was Mar 21) | Push to origin + submit |
+| LAI Paper | `/home/theo/lai_paper` | ⚠️ Overdue (was Mar 21) | Finalize figures + details (95% done) → submit to **Nature Cities** (topic: LAI/UHI index) |
 | Brisa+ Paper | `/home/theo/brisa_paper` | 🟡 In progress | CFD pipeline, deadline June 2026 |
+| Brisa+ Simulations | HPC cluster | ⚠️ Urgent | Redefine simulation scenario + launch HPC campaign (before Wed meeting w/ Lucas) |
 | Job Pipeline | `~/clawd/job-pipeline/` | 🟡 13 apps queued, 0 submitted | Run process_queue.py |
 | Morning Brief v2 | `~/clawd/scripts/morning-brief-v2.py` | ✅ Live, cron 6:50am weekdays | Monitor daily output |
 | Personal Website | `~/projects/website/` | ✅ Live at thrmnn.github.io | Push updates via git |
 | Mission Control | `~/clawd/mission-control/` | ✅ Live at mission-control-ruby-zeta.vercel.app | Fix write mutations |
 | AI Agency MVP | `~/projects/ai-agency/mvp/` | 🟡 Maintenance mode | Outreach to French legal-tech |
 | PhD Application | `Ob_Business_Vault/Projects/PhD Application/` | 🟡 Plan built | Supervisor outreach by April |
+| HP Studio (Hermann & Postingel) | `Ob_Business_Vault/Wiki/sources/App Development Studio.md` | 🟡 Ideation | 5 app ideas by Fri Apr 11 |
+
+### People (new)
+- **Michiel** — MIT SCL Amsterdam, LAI collaborator. Weekly meetings.
+- **Mateo Postingel** — Italian designer, MIT SCL Rio, co-founder HP Studio (him frontend, Théo backend)
+- **Théo's brother** — in France. Weekly call reminder active, target slot 13-14h BRT = 18-19h CEST. Remind until confirmed.
+- **Antoine Dubos** — friend, weekly Monday meeting (startup/freelancing accountability)
+- **Lucas Gobati** — ETH Zürich, Brisa+ microclimate simulations. Hard weekly deadline: show results every Wednesday morning.
+
+### Standing Rules (new)
+- ⚠️ **Project sprawl guard:** Théo tends to start too many projects. Flag when new projects emerge. Push back on parallelization.
+- **Revenue:** MIT SCL salary (no fixed contract) → transitioning to freelance + entrepreneurship
+  - Freelance starting from scratch: rebrand LinkedIn → Fiverr/Malt registration
+  - Antoine Dubos Monday meetings: secret project (do not ask)
+- **Three pillars:** Santé / Business / Recherche
+- **Identity anchors** (use as decision filters when Théo faces a choice or reports a struggle):
+  - Santé: "I'm someone who shows up for their body consistently"
+  - Business: "I'm someone who ships, not someone who plans"
+  - Recherche: "I'm someone who finishes what they start"
+- **Health Admin Cadence:** Monthly check (1st Sunday) — doctor/dentist appointments, vitamin stock, medical tasks
+- **Measurement Cadence:** Weekly (Sundays) — weight, body fat %, training volume
+- **Last health admin check:** 2026-05-04 — DETRAN pending, doctor/dentist not scheduled, supplements not logged
+
+### Admin Reminders (remind until done)
+- [ ] Équivalence permis de conduire français → brésilien (DETRAN SP) — **Last checked: 2026-05-04, pending since April 5**
+- [ ] Démarches + inscription permis moto (catégorie A) — **Depends on license conversion**
+- [ ] Doctor appointment — **Not scheduled, last visit unknown**
+- [ ] Dentist appointment — **Not scheduled, last visit unknown**
+- [ ] Vitamin/supplement stock audit — **Not logged, reorder threshold unknown**
 
 ---
 
@@ -58,6 +88,22 @@
 
 ## Standing Rules
 
+### Gateway Config Rule
+- ALWAYS backup → validate JSON → restart when editing openclaw.json
+- Backup: `cp ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.bak.$(date +%Y-%m-%d)`
+- Watchdog (`watchdog.sh`) disabled — replaced by systemd timers
+
+### Infra: Cron & Timers (VPS runtime, verified 2026-04-05 22:22 UTC)
+- **cron-worker agent**: isolated OpenClaw agent handling scheduled task dispatch
+- **Systemd user timers**: 5 `ze-*` timers on VPS, all firing on cadence
+  (circuit-breaker 2m, burn-sentinel 1h, session-sentinel 2×/day, session-rotate daily 04 UTC, morning-brief daily 10:30 UTC)
+- **mc-sync-agents**: throttled 2 min → 30 min; still in error state (see PLUMBING-TODO.md P1)
+- **VPS crontab**: empty (no watchdog, no native crons — all via openclaw + systemd)
+- **Desktop crontab**: still has dead `watchdog.sh */2` entry (harmless; VPS is runtime)
+- **Sentinel patterns**: ze-circuit-breaker + ze-burn-sentinel now catch both
+  `rate_limit_error` and `"out of extra usage"` (fixed 2026-04-05 — earlier pattern missed today's 18 rejections)
+- **Plumbing backlog**: see `PLUMBING-TODO.md` for the durable TODO list
+
 ### /today Workflow
 - Read daily note + all INTERVIEW files → process → update daily note with actionable intel
 - INTERVIEW files: `{vault}/Projects/{project}/INTERVIEW - Current Status.md`
@@ -81,8 +127,6 @@
 | Issue | Impact | Fix |
 |-------|--------|-----|
 | SSH keys not on VPS | Can't push to GitHub from VPS | Add keys + `~/.ssh/config` to VPS |
-| Anthropic API key — no credits | Python SDK calls fail | Add credits at console.anthropic.com/billing |
 | Nitter blocked (VPS IP) | X/Twitter intel always empty in morning brief | No fix — skip gracefully |
 | Mission Control write mutations | Task updates via API unreliable | Investigate Convex mutations |
-| OpenClaw update pending | Running 2026.3.13, latest 2026.3.23-2 | Run `openclaw update` |
 | No swap on VPS | OOM risk if gateway grows | `sudo fallocate -l 2G /swapfile` |

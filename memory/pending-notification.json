@@ -1,0 +1,10 @@
+{
+  "type": "telegram",
+  "recipient": "@Ale",
+  "chatId": 8158798678,
+  "timestamp": "2026-04-06T12:02:50Z",
+  "subject": "Position Radar Daily Scan Summary",
+  "body": "📊 **Position Radar Daily Scan** — Mon, Apr 6, 12:02 PM UTC\n\n**Results:**\n• Jobs fetched: 6\n• New jobs: 0\n• Scored ≥70: 0\n• DB total seen: 531\n\n**Status:** No new positions found. All 6 fetched were duplicates.\n\n**Errors:**\n⚠️ Greenhouse: Missing lxml parser\n⚠️ LinkedIn (5 searches): Missing lxml parser  \n⚠️ Lever: 2 dead endpoints (Machina Labs, Viam)\n\n**Next:** Fix lxml dependency to resume Greenhouse & LinkedIn scraping.",
+  "priority": "low",
+  "sent": false
+}
