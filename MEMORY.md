@@ -1,5 +1,5 @@
 # MEMORY — Hot Context
-> Last updated: 2026-04-08 | Injected every session. Keep under 5000 chars.
+> Last updated: 2026-05-09 (09:07 BRT) | Injected every session. Keep under 5000 chars.
 > Full topic files: ~/clawd/memory/topics/ | Daily logs: ~/clawd/memory/YYYY-MM-DD.md
 
 ---
@@ -19,14 +19,13 @@
 
 | Project | Location | Status | Next Action |
 |---------|----------|--------|-------------|
-| LAI Paper | `/home/theo/lai_paper` | ⚠️ Overdue (was Mar 21) | Finalize figures + details (95% done) → submit to **Nature Cities** (topic: LAI/UHI index) |
+| LAI Paper | `/home/theo/lai_paper` | 🔴 **49 DAYS OVERDUE** (deadline Mar 21) | Review 11 modified files + tree count fix + commit + co-author sign-offs. Target submit TODAY. |
+| AI Agency MVP | `~/projects/ai-agency/mvp/` | 🔴 **49 DAYS OVERDUE** (deadline Mar 21) | .env deploy + docker test + Loom demo + 3 legal-tech DMs (Hyperlex, Leeway, Predictice) TODAY |
 | Brisa+ Paper | `/home/theo/brisa_paper` | 🟡 In progress | CFD pipeline, deadline June 2026 |
-| Brisa+ Simulations | HPC cluster | ⚠️ Urgent | Redefine simulation scenario + launch HPC campaign (before Wed meeting w/ Lucas) |
-| Job Pipeline | `~/clawd/job-pipeline/` | 🟡 13 apps queued, 0 submitted | Run process_queue.py |
+| Job Pipeline | `~/clawd/job-pipeline/` | 🟡 Production ready | Submit Apptronik (83/100) + Position Radar scan (14→24 companies). 13 apps ready. |
+| Personal Website | `~/projects/website/` | 🟡 70% done | Content sprint: 3 project descriptions + screenshots + headshot |
 | Morning Brief v2 | `~/clawd/scripts/morning-brief-v2.py` | ✅ Live, cron 6:50am weekdays | Monitor daily output |
-| Personal Website | `~/projects/website/` | ✅ Live at thrmnn.github.io | Push updates via git |
 | Mission Control | `~/clawd/mission-control/` | ✅ Live at mission-control-ruby-zeta.vercel.app | Fix write mutations |
-| AI Agency MVP | `~/projects/ai-agency/mvp/` | 🟡 Maintenance mode | Outreach to French legal-tech |
 | PhD Application | `Ob_Business_Vault/Projects/PhD Application/` | 🟡 Plan built | Supervisor outreach by April |
 | HP Studio (Hermann & Postingel) | `Ob_Business_Vault/Wiki/sources/App Development Studio.md` | 🟡 Ideation | 5 app ideas by Fri Apr 11 |
 
@@ -50,13 +49,13 @@
 - **Health Admin Cadence:** Monthly check (1st Sunday) — doctor/dentist appointments, vitamin stock, medical tasks
 - **Measurement Cadence:** Weekly (Sundays) — weight, body fat %, training volume
 - **Last health admin check:** 2026-05-04 — DETRAN pending, doctor/dentist not scheduled, supplements not logged
+- **⚠️ CRITICAL BLOCKER:** LAI Paper + AI Agency both 49 days overdue (deadline: March 21). May 9 is the breaking point. Academic obligation #1 (LAI) + Revenue #2 (Agency + Job Pipeline). TODAY IS THE DAY.
 
 ### Admin Reminders (remind until done)
-- [ ] Équivalence permis de conduire français → brésilien (DETRAN SP) — **Last checked: 2026-05-04, pending since April 5**
-- [ ] Démarches + inscription permis moto (catégorie A) — **Depends on license conversion**
-- [ ] Doctor appointment — **Not scheduled, last visit unknown**
-- [ ] Dentist appointment — **Not scheduled, last visit unknown**
-- [ ] Vitamin/supplement stock audit — **Not logged, reorder threshold unknown**
+- [ ] Équivalence permis de conduire français → brésilien (DETRAN SP) — **Last checked: 2026-05-04, pending since April 5** [LOW PRIORITY — defer to after May 9 sprint]
+- [ ] Doctor appointment — **Not scheduled, last visit unknown** [LOW PRIORITY — defer to after May 9 sprint]
+- [ ] Dentist appointment — **Not scheduled, last visit unknown** [LOW PRIORITY — defer to after May 9 sprint]
+- [ ] Vitamin/supplement stock audit — **Not logged, reorder threshold unknown** [LOW PRIORITY — defer to after May 9 sprint]
 
 ---
 

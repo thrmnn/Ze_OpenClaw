@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-04T12:02:47.837Z",
+  "updatedAt": "2026-05-09T18:02:51.318Z",
   "entries": {
     "memory:memory/archive/2026-03-17.md:87:90": {
       "key": "memory:memory/archive/2026-03-17.md:87:90",
@@ -9,18 +9,21 @@
       "endLine": 90,
       "source": "memory",
       "snippet": "@@ -87,4 @@ (86 before, 19 after) ### Project Interviews Created - LAI Paper → INTERVIEW - Current Status.md - Brisa+ Paper → INTERVIEW - Current Status.md - AI Agency → INTERVIEW - Current Status.md",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.61,
-      "maxScore": 0.61,
+      "totalScore": 2.06,
+      "maxScore": 0.83,
       "firstRecalledAt": "2026-05-01T18:02:49.650Z",
-      "lastRecalledAt": "2026-05-01T18:02:49.650Z",
+      "lastRecalledAt": "2026-05-09T18:02:51.318Z",
       "queryHashes": [
-        "384ee6534d03"
+        "384ee6534d03",
+        "80445c38d9b9",
+        "e3cc2db2f5b5"
       ],
       "recallDays": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-09"
       ],
       "conceptTags": [
         "status.md",
@@ -40,18 +43,20 @@
       "endLine": 17,
       "source": "memory",
       "snippet": "@@ -14,4 @@ (13 before, 222 after) Lists configured for sprint-based workflow: 1. **Sprint En Cours** (Current Sprint) - Active sprint tasks 2. **En Cours** (In Progress) - Work in progress 3. **En Attente** (Waiting) - Blocked/waiting tasks",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.59,
-      "maxScore": 0.59,
+      "totalScore": 1.2,
+      "maxScore": 0.61,
       "firstRecalledAt": "2026-05-01T18:02:49.650Z",
-      "lastRecalledAt": "2026-05-01T18:02:49.650Z",
+      "lastRecalledAt": "2026-05-09T18:02:51.318Z",
       "queryHashes": [
-        "384ee6534d03"
+        "384ee6534d03",
+        "e3cc2db2f5b5"
       ],
       "recallDays": [
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-09"
       ],
       "conceptTags": [
         "sprint-based",
@@ -93,6 +98,37 @@
         "6,4",
         "paper",
         "paper-trades.json"
+      ]
+    },
+    "memory:memory/2026-03-30.md:5:8": {
+      "key": "memory:memory/2026-03-30.md:5:8",
+      "path": "memory/2026-03-30.md",
+      "startLine": 5,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "@@ -5,4 @@ (4 before, 40 after) ### Trading Bot - `paper/paper_trades.json` does not exist — bot ran but no trades were filed there - Trading journal: `Ob_Perso_Vault/Areas/Swing Trading/Trading Journal/2026-03-Trades.md` - Daily scans confirmed Mar 23–27, all 15 symbols, **zero qualifying setups all week**",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.92,
+      "maxScore": 0.92,
+      "firstRecalledAt": "2026-05-08T21:02:59.149Z",
+      "lastRecalledAt": "2026-05-08T21:02:59.149Z",
+      "queryHashes": [
+        "a670207da459"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "paper/paper-trades.json",
+        "ob-perso-vault/areas/swing",
+        "trading/trading",
+        "journal/2026-03-trades.md",
+        "5,4",
+        "trading",
+        "bot",
+        "paper"
       ]
     }
   }
