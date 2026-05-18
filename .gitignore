@@ -19,6 +19,9 @@ Miniforge3*.sh
 /tmp/
 temp-*.pdf
 
+# State databases
+*.db
+
 # Build artifacts
 canvas/
 data/
@@ -43,6 +46,13 @@ skills/
 .openclaw/
 .clawhub/
 .clawdhub/
+
+# Pre-reorg backups
+*.pre-reorg.bak/
+
+# Syncthing
+.stfolder/
+.stignore
 
 # Test scripts
 test-*.sh

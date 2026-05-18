@@ -1,0 +1,1 @@
+/home/theo/agents/ze/persona/AUTONOMY_RULES.md

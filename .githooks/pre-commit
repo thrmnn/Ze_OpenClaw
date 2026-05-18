@@ -1,0 +1,13 @@
+#!/bin/bash
+# Pre-commit hook: run quick lint checks before allowing commits.
+# Install: git config core.hooksPath .githooks
+
+echo "[pre-commit] Running lint checks..."
+make -C "$(git rev-parse --show-toplevel)" lint
+
+if [ $? -ne 0 ]; then
+  echo "[pre-commit] ❌ Lint failed. Fix errors before committing."
+  exit 1
+fi
+
+echo "[pre-commit] ✅ Lint passed."
